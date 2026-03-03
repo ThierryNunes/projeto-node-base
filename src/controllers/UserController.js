@@ -1,5 +1,5 @@
 const Controller = require("./Controller.js");
-const UserController = require("../services/UserServices.js");
+const UserServices = require("../services/UserServices.js");
 
 const userServices = new UserServices();
 
@@ -22,8 +22,8 @@ class UserController extends Controller {
     }
 
     try {
-      const result = await authServices.createNewUser({
-        nome,
+      const result = await userServices.createNewUser({
+        name,
         email,
         password,
       });

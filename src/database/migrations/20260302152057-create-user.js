@@ -27,7 +27,7 @@ module.exports = {
       imageUrl: {
         type: Sequelize.STRING,
       },
-      active: {
+      status: {
         allowNull: false,
         type: Sequelize.BOOLEAN,
       },
